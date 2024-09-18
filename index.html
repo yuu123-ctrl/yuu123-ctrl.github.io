@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Meses Contigo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/file.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/810dc589ac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header2">
+        <h1>Cuatro bellos meses Contigo</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <!-- <li><a href="#gallery">Galería</a></li> -->
+                <li><a href="#songs">Canciones</a></li>
+                <li><a href="#letter">Carta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <video autoplay loop muted id="background-video">
+        <source src="video/cielo.mp4" type="video/mp4">
+    </video>
+    <div class="audio">
+        <h2>Dale play para repoducir el audio.</h2>
+        <p>"Will you still love me when I'm no longer young and beautiful?" </p>
+        <audio id="audio" src="audio/Love song.mp3"  autoplay loop controls > Este navegador no puede reproducir el audio.</audio>
+    </div>
+
+    <section id="home">
+        <h2>Bienvenida, mi amor <i class="fa-solid fa-heart"></i></h2>
+        <p>"It's you, it's you, it's all for you, everything I do"</p>
+        <img src="/img/bondie.png" alt="Bon Die">
+    </section>
+
+    <!-- <section id="gallery">
+        <h2>Galería de Momentos</h2>
+        <div class="gallery">
+            <div class="image">
+                <img src="img/Lana-1 (1).jpg" alt="Momento 1">
+                <p>"Frase inspirada en nuestra primera foto juntos."</p>
+            </div>
+            <div class="image">
+                <img src="img/Lana-2.jpg" alt="Momento 2">
+                <p>"Una tarde que jamás olvidaré."</p>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="songs">
+        <h2><i class="fa-solid fa-music"></i> Canciones que describen lo nuestro</h2>
+        <ul>
+            <li><a href="https://open.spotify.com/intl-es/track/2nMeu6UenVvwUktBCpLMK9?si=87e0943b6eb044e3" target="_blank"><i class="fa-brands fa-spotify fa-xl"></i>  "Young and Beautiful"</a>  - Porque siempre serás joven y hermosa para mí. Nunca dejaré de amarte.</li>
+            <li><a href="https://open.spotify.com/intl-es/track/2Kerz9H9IejzeIpjhDJoYG?si=0ac0563e52d34dbf"><i class="fa-brands fa-spotify fa-xl"></i> "Love"</a> - Porque me recuerda lo bello y especial de nuestro amor, que lo importante es amarnos.</li>
+        </ul>
+    </section>
+
+    <section id="letter">
+        <h2><i class="fa-solid fa-envelope"></i> una carta para usted</h2>
+        <p>Aquí tienes una carta <i class="fa-solid fa-hand-holding-heart"></i></p>
+        <a href="docs/Para mi bonita.pdf" target="_blank"><i class="fa-solid fa-file"></i> Aquí para ir al archivo</a>
+        <a href="docs/Para mi bonita.pdf" download="4 bellos meses.pdf"><i class="fa-solid fa-file-arrow-down"></i> Aquí para descargar</a>
+    </section>
+
+    <!-- <section id="future">
+        <h2>Detalles del Futuro</h2>
+        <p>Con cada día que pasa, sueño con un futuro juntos lleno de amor, risas y aventuras...</p>
+    </section> -->
+
+    <footer>
+        <p>&copy; 2024 Joel</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var audio = document.getElementById("audio");
+            audio.volume = 0.2; // Ajusta el volumen (0.2 = 20% del volumen máximo)
+        });
+    </script>
+</body>
+</html>
